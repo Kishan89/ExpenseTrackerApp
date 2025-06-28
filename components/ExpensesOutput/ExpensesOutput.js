@@ -8,7 +8,6 @@ function ExpensesOutput({ expenses, expensesPeriod, fallbackText }) {
   if (expenses.length > 0) {
     content = <ExpensesList expenses={expenses} />;
   }
-
   return (
     <View style={styles.container}>
       <ExpensesSummary expenses={expenses} periodName={expensesPeriod} />
